@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SmartHome</string>
+
+    <color name="touchOn_Living">#EDF</color>
+    <color name="touchDown_Living">#EE82EE</color>
+
+    <color name="touchOn_Multi">#FFA07A</color>
+    <color name="touchDown_multi">#A0522D</color>
+
+
+    <color name="touchOn_Room1">#98FB98</color>
+    <color name="touchDown_Room1">#32CD32</color>
+
+    <color name="touchOn_Room2">#FFFACD</color>
+    <color name="touchDown_Room2">#FFD700</color>
+
+    <color name="touchOn_Kitchen">#AFEEEE</color>
+    <color name="touchDown_Kitchen">#00BFFF</color>
+
+    <color name="touchOn_Toilet">#FFA500</color>
+    <color name="touchDown_Toilet">#FF8C00</color>
+
+    <color name="touchOn_MainDoor">#EE82EE</color>
+    <color name="touchDown_MainDoor">#9932CC</color>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:background="@drawable/border"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outside"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:id="@+id/relativeLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/O_temp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Temp : "
+                    android:textSize="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/O_humi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Humi : "
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/O_battery"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Battery : "
+                    android:textSize="10dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout5">
+
+
+                <TextView
+                    android:id="@+id/O_UV"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="UV : "
+                    android:textSize="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/O_Dust"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dust : "
+                    android:textSize="10dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/linearLayout5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border">
+
+                <!--
+                <Button
+                    android:id="@+id/O_StoB"
+                    android:layout_width="70dp"
+                    android:layout_height="22dp"
+                    android:background="#E0FFFF"
+                    android:text="S->B OFF"
+                    android:textSize="8dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/O_StoD"
+                    android:layout_width="70dp"
+                    android:layout_height="22dp"
+                    android:text="S->D OFF"
+                    android:textSize="8dp"
+                    android:background="#7FFFD4"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="23dp" />
+
+
+                <Button
+                    android:id="@+id/O_BtoD"
+                    android:layout_width="70dp"
+                    android:layout_height="22dp"
+                    android:text="B->D OFF"
+                    android:textSize="8dp"
+                    android:background="#FFFACD"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_above="@+id/carhousedoor"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="12dp" />
+                -->
+
+                <Button
+                    android:id="@+id/carhousedoor"
+                    android:layout_width="70dp"
+                    android:layout_height="22dp"
+                    android:text="Car House Door Close"
+                    android:textSize="8dp"
+                    android:background="#1E90FF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="   Solor Angle"
+                        android:textSize="10dp" />
+
+                    <SeekBar
+                        android:id="@+id/O_solorangle"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:max="180"
+                        android:progress="0"/>
+
+                    <TextView
+                        android:id="@+id/O_solordata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

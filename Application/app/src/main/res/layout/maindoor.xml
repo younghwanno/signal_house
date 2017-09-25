@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:background="@drawable/border"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentEnd="true">
+
+            <Switch
+                android:id="@+id/D_auto_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="Auto"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Door"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:id="@+id/relativeLayout">
+
+            <!-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/linearLayout"
+                            android:layout_marginTop="15dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/relativeLayout3">
+
+
+                            <TextView
+                                android:id="@+id/D_temp"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Temp : "
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/D_humi"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:text="Humi : "/>
+
+
+                        </LinearLayout>
+            <!-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_above="@+id/relativeLayout3"
+                            android:layout_alignStart="@+id/relativeLayout3">
+
+                            <Button
+                                android:id="@+id/D_bodysensor"
+                                android:layout_width="70dp"
+                                android:layout_height="20dp"
+                                android:layout_above="@+id/relativeLayout3"
+                                android:layout_alignStart="@+id/linearLayout"
+                                android:background="#AFEEEE"
+                                android:enabled="true"
+                                android:text="BodySensor OFF"
+                                android:textSize="8dp" />
+
+                            <Button
+                                android:id="@+id/D_door"
+                                android:layout_width="70dp"
+                                android:layout_height="20dp"
+                                android:text="Door Close"
+                                android:textSize="8dp"
+                                android:enabled="true"
+                                android:background="#FFFACD"
+                                android:layout_above="@+id/relativeLayout3"
+                                android:layout_alignStart="@+id/linearLayout"
+                                android:layout_marginLeft="8dp"/>
+
+                            <Button
+                                android:id="@+id/D_ledonoff"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp"
+                                android:text="LED OFF"
+                                android:textSize="8dp"
+                                android:enabled="true"
+                                android:background="#FFE4C4"
+                                android:layout_above="@+id/relativeLayout3"
+                                android:layout_alignStart="@+id/linearLayout"
+                                android:layout_marginLeft="8dp"/>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="240dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/relativeLayout3"
+                            android:background="@drawable/border"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+
+
+                            <LinearLayout
+                                android:id="@+id/D_cmd_layout_auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="12dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="    Total"
+                                        android:textSize="10dp" />
+
+                                    <SeekBar
+                                        android:id="@+id/D_autoBar"
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:max="255"
+                                        android:progress="0"/>
+
+                                    <TextView
+                                        android:id="@+id/D_Audata"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>

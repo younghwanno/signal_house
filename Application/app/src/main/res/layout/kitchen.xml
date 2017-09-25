@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:background="@drawable/border"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentEnd="true">
+
+            <Switch
+                android:id="@+id/K_auto_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="Auto"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:id="@+id/relativeLayout">
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/K_temp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Temp : "
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/K_humi"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Humi : "/>
+
+                <TextView
+                    android:id="@+id/K_LPG"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="LPG : "
+                    android:textSize="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/K_Fire"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fire"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:layout_above="@+id/relativeLayout3"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/K_window1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="#E0FFFF"
+                    android:text="Window1 Close"
+                    android:textSize="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <Button
+                    android:id="@+id/K_window2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Window2 Close"
+                    android:textSize="8dp"
+                    android:background="#7FFFD4"
+                    android:layout_marginLeft="3dp"/>
+
+                <Button
+                    android:id="@+id/K_ventilfan"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ventil Fan OFF"
+                    android:textSize="8dp"
+                    android:background="#FFFACD"
+                    android:layout_marginLeft="3dp"/>
+
+                <Button
+                    android:id="@+id/K_ledonoff"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="LED OFF"
+                    android:textSize="8dp"
+                    android:background="#FFB6C1"
+                    android:layout_marginLeft="3dp"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="110dp"
+                android:id="@+id/relativeLayout3"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/K_cmd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/linearLayout3"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="    Red"
+                            android:textSize="10dp"/>
+
+                        <SeekBar
+                            android:id="@+id/K_redBar"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:max="255"
+                            android:progress="0"/>
+
+                        <TextView
+                            android:id="@+id/K_Rdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/linearLayout2"
+                        android:layout_below="@+id/linearLayout3"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Green"
+                            android:textSize="10dp" />
+
+                        <SeekBar
+                            android:id="@+id/K_greenBar"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:max="255"
+                            android:progress="0"/>
+
+                        <TextView
+                            android:id="@+id/K_Gdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/linearLayout4"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="    Blue"
+                            android:textSize="10dp" />
+
+                        <SeekBar
+                            android:id="@+id/K_blueBar"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:max="255"
+                            android:progress="0"/>
+
+                        <TextView
+                            android:id="@+id/K_Bdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/K_cmd_layout_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/K_cmd_layout"
+                    android:layout_alignParentStart="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="    Total"
+                            android:textSize="10dp" />
+
+                        <SeekBar
+                            android:id="@+id/K_autoBar"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:max="255"
+                            android:progress="0"/>
+
+                        <TextView
+                            android:id="@+id/K_Audata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

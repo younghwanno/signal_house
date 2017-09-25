@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeintro">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="750dp"
+        android:id="@+id/strintro"
+        android:background="#E6E6FA">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signal House"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/relativeLayout5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:ems="10"
+                android:singleLine="true"
+                android:layout_weight="1">
+                <requestFocus/>
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout7"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/linearLayout6"
+            android:layout_alignEnd="@+id/linearLayout6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="port"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:ems="10"
+                android:singleLine="true"
+                android:layout_weight="1">
+                <requestFocus/>
+            </EditText>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout70"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/linearLayout7"
+            android:layout_alignEnd="@+id/linearLayout7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:ems="10"
+                android:singleLine="true"
+                android:layout_weight="1">
+                <requestFocus/>
+            </EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout78"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/linearLayout70"
+            android:layout_alignEnd="@+id/linearLayout70">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PW"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/pw"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:ems="10"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:inputType="textPassword">
+                <requestFocus/>
+            </EditText>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp" />
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

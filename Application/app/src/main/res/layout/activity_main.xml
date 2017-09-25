@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainlayout"
+    tools:context="com.example.jaeho.myapplication4.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/interFace">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weather : " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home_mode"
+                    android:textSize="13dp"
+                    android:layout_weight="1"/>
+
+                <Switch
+                    android:id="@+id/O_auto_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auto"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/O_heating_pump"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="Heating Pump OFF"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/O_boiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="Boiler OFF"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/O_all_door"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="All Door Close"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/O_all_window"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="All Window Close"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignEnd="@android:id/tabs"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/relativeLayout4"
+            android:layout_marginLeft="230dp">
+
+
+            <RelativeLayout
+                android:id="@+id/livingroom"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="#EDF"
+                android:onClick="living">
+
+
+                <LinearLayout
+                    android:id="@+id/multi"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:background="#FFA07A"
+                    android:onClick="multi"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/room1"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/multi"
+                    android:background="#98FB98"
+                    android:onClick="room1"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kitchen"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#AFEEEE"
+                    android:onClick="kit"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/room2"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#FFFACD"
+                    android:onClick="room2"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/toilet"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/kitchen"
+                    android:background="#FFA500"
+                    android:onClick="toilet"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maindoor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="80dp"
+                    android:background="#EE82EE"
+                    android:onClick="maindoor"></LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout4"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout6">
+
+            <TabHost
+                android:id="@+id/tabHost1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="330dp"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@android:id/tabcontent"
+                        android:layout_alignStart="@android:id/tabcontent" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="330dp"
+                        android:layout_height="280dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp">
+
+                        <RelativeLayout
+                            android:id="@+id/LV"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/KT"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/R1"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/R2"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/TL"
+                            android:layout_width="320dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/MU"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/MD"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/OT"
+                            android:layout_width="330dp"
+                            android:layout_height="280dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true">
+
+                        </RelativeLayout>
+
+
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+            </TabHost>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/intro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </RelativeLayout>
+
+    <!--  주 석
+    <RelativeLayout
+        android:id="@+id/contents"
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:layout_marginBottom="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+    -->
+
+</FrameLayout>
